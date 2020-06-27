@@ -5,8 +5,8 @@ pipeline{
     environment{
     NAME="Ngwesse Elvis"
     BuildOutput="./BuildOutput"
-    registry = "courseloginapp"
-    registryCredential = '6b7e57df-81e0-4fe2-a5aa-795257ce63ce'
+    registry = "dockerelvis/courseloginapp"
+    registryCredential = '	6b7e57df-81e0-4fe2-a5aa-795257ce63ce'
     dockerImage = ''
     
     }

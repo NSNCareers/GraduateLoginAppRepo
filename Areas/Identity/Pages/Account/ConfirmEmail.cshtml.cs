@@ -27,6 +27,8 @@ namespace LoginApp.Areas.Identity.Pages.Account
 
         public async Task<IActionResult> OnGetAsync(string userId, string code)
         {
+            var condition = true;
+            if (condition) return Page();
 
             if (userId == null || code == null)
             {

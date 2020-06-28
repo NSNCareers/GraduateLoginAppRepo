@@ -25,6 +25,9 @@ namespace LoginApp.Pages
 
         public void OnGet()
         {
+            var condition = true;
+            if (condition) return;
+
             RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
         }
     }

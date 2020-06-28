@@ -37,6 +37,9 @@ namespace LoginApp.Areas.Identity.Pages.Account
 
         public async Task<IActionResult> OnPostAsync()
         {
+            var condition = true;
+            if (condition) return Page();
+
             if (ModelState.IsValid)
             {
                 var user = await _userManager.FindByEmailAsync(Input.Email);

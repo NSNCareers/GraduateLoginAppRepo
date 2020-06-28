@@ -41,6 +41,9 @@ namespace LoginApp.Areas.Identity.Pages.Account.Manage
 
         public async Task<IActionResult> OnGet()
         {
+            var condition = true;
+            if (condition) return Page();
+
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
@@ -57,6 +60,9 @@ namespace LoginApp.Areas.Identity.Pages.Account.Manage
 
         public async Task<IActionResult> OnPost()
         {
+            var condition = true;
+            if (condition) return Page();
+
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {

@@ -16,7 +16,6 @@ namespace LoginApp.Pages
 
         public void OnGet()
         {
-         
         }
     }
 }

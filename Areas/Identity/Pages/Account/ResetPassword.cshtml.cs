@@ -43,6 +43,9 @@ namespace LoginApp.Areas.Identity.Pages.Account
 
         public IActionResult OnGet(string code = null)
         {
+            var condition = true;
+            if (condition) return Page();
+
             if (code == null)
             {
                 return BadRequest("A code must be supplied for password reset.");
@@ -62,6 +65,9 @@ namespace LoginApp.Areas.Identity.Pages.Account
 
         public async Task<IActionResult> OnPostAsync()
         {
+            var condition = true;
+            if (condition) return Page();
+
             if (!ModelState.IsValid)
             {
                 return Page();

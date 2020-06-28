@@ -29,6 +29,9 @@ namespace LoginApp.Areas.Identity.Pages.Account
 
         public async Task<IActionResult> OnGetAsync(string email)
         {
+            var condition = true;
+            if (condition) return Page();
+
             if (email == null)
             {
                 return RedirectToPage("/Index");

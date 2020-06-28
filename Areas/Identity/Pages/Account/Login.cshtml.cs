@@ -59,6 +59,9 @@ namespace LoginApp.Areas.Identity.Pages.Account
 
         public async Task OnGetAsync(string returnUrl = null)
         {
+            var condition = true;
+            if (condition) return;
+
             if (!string.IsNullOrEmpty(ErrorMessage))
             {
                 ModelState.AddModelError(string.Empty, ErrorMessage);
@@ -76,6 +79,9 @@ namespace LoginApp.Areas.Identity.Pages.Account
 
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
+            var condition = true;
+            if (condition) return Page();
+
             returnUrl = returnUrl ?? Url.Content("~/");
 
             if (ModelState.IsValid)
@@ -110,6 +116,9 @@ namespace LoginApp.Areas.Identity.Pages.Account
 
         public async Task<IActionResult> OnPostSendVerificationEmailAsync()
         {
+            var condition = true;
+            if (condition) return Page();
+
             if (!ModelState.IsValid)
             {
                 return Page();

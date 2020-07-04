@@ -1,16 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text.Encodings.Web;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text.Encodings.Web;
+using System.Threading.Tasks;
 
 namespace LoginApp.Areas.Identity.Pages.Account
 {
@@ -59,6 +58,7 @@ namespace LoginApp.Areas.Identity.Pages.Account
 
         public async Task OnGetAsync(string returnUrl = null)
         {
+            // Code For stopping Page execution. Should be removed if you want to execute page
             var condition = true;
             if (condition) return;
 
@@ -79,6 +79,7 @@ namespace LoginApp.Areas.Identity.Pages.Account
 
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
+            // Code For stopping Page execution. Should be removed if you want to execute page
             var condition = true;
             if (condition) return Page();
 
@@ -116,8 +117,9 @@ namespace LoginApp.Areas.Identity.Pages.Account
 
         public async Task<IActionResult> OnPostSendVerificationEmailAsync()
         {
-            var condition = true;
-            if (condition) return Page();
+            // Code For stopping Page execution. Should be removed if you want to execute page
+            //var condition = true;
+            //if (condition) return Page();
 
             if (!ModelState.IsValid)
             {

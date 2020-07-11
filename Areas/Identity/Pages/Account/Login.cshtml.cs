@@ -59,8 +59,8 @@ namespace LoginApp.Areas.Identity.Pages.Account
         public async Task OnGetAsync(string returnUrl = null)
         {
             // Code For stopping Page execution. Should be removed if you want to execute page
-            var condition = true;
-            if (condition) return;
+            //var condition = true;
+            //if (condition) return;
 
             if (!string.IsNullOrEmpty(ErrorMessage))
             {
@@ -80,8 +80,8 @@ namespace LoginApp.Areas.Identity.Pages.Account
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
             // Code For stopping Page execution. Should be removed if you want to execute page
-            var condition = true;
-            if (condition) return Page();
+            //var condition = true;
+            //if (condition) return Page();
 
             returnUrl = returnUrl ?? Url.Content("~/");
 

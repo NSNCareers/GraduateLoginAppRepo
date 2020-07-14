@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using System.Threading.Tasks;
 
 namespace LoginApp.Areas.Identity.Pages.Account.Manage
 {
@@ -41,8 +38,9 @@ namespace LoginApp.Areas.Identity.Pages.Account.Manage
 
         public async Task<IActionResult> OnGet()
         {
-            var condition = true;
-            if (condition) return Page();
+            // Code For stopping Page execution. Should be removed if you want to execute page
+            //var condition = true;
+            //if (condition) return Page();
 
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
@@ -60,8 +58,9 @@ namespace LoginApp.Areas.Identity.Pages.Account.Manage
 
         public async Task<IActionResult> OnPost()
         {
-            var condition = true;
-            if (condition) return Page();
+            // Code For stopping Page execution. Should be removed if you want to execute page
+            //var condition = true;
+            //if (condition) return Page();
 
             var user = await _userManager.GetUserAsync(User);
             if (user == null)

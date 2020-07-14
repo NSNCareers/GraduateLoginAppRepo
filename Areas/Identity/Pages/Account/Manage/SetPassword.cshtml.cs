@@ -44,8 +44,9 @@ namespace LoginApp.Areas.Identity.Pages.Account.Manage
 
         public async Task<IActionResult> OnGetAsync()
         {
-            var condition = true;
-            if (condition) return Page();
+            // Code For stopping Page execution. Should be removed if you want to execute page
+            //var condition = true;
+            //if (condition) return Page();
 
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
@@ -65,8 +66,9 @@ namespace LoginApp.Areas.Identity.Pages.Account.Manage
 
         public async Task<IActionResult> OnPostAsync()
         {
-            var condition = true;
-            if (condition) return Page();
+            // Code For stopping Page execution. Should be removed if you want to execute page
+            //var condition = true;
+            //if (condition) return Page();
 
             if (!ModelState.IsValid)
             {

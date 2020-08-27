@@ -30,8 +30,8 @@ namespace LoginApp.Areas.Identity.Pages.Account
         public async Task<IActionResult> OnPost(string returnUrl = null)
         {
             // Code For stopping Page execution. Should be removed if you want to execute page
-            //var condition = true;
-            //if (condition) return Page();
+            var condition = true;
+            if (condition) return Page();
 
             await _signInManager.SignOutAsync();
             _logger.LogInformation("User logged out.");

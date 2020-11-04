@@ -63,9 +63,9 @@ namespace LoginApp.Areas.Identity.Pages.Account
 
         public async Task OnGetAsync(string returnUrl = null)
         {
-            // Code For stopping Page execution. Should be removed if you want to execute page
-            var condition = true;
-            if (condition) return;
+            // 2 Code For stopping Page execution. Should be removed if you want to execute page
+            // var condition = true;
+            // if (condition) return;
 
             ReturnUrl = returnUrl;
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
@@ -73,9 +73,9 @@ namespace LoginApp.Areas.Identity.Pages.Account
 
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
-            // Code For stopping Page execution. Should be removed if you want to execute page
-            var condition = true;
-            if (condition) return Page();
+            // 2 Code For stopping Page execution. Should be removed if you want to execute page
+            // var condition = true;
+            // if (condition) return Page();
 
             returnUrl = returnUrl ?? Url.Content("~/");
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();

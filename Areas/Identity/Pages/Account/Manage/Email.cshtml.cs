@@ -68,9 +68,9 @@ namespace LoginApp.Areas.Identity.Pages.Account.Manage
 
         public async Task<IActionResult> OnGetAsync()
         {
-            // Code For stopping Page execution. Should be removed if you want to execute page
-            var condition = true;
-            if (condition) return Page();
+            // 2 Code For stopping Page execution. Should be removed if you want to execute page
+            // var condition = true;
+            // if (condition) return Page();
 
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
@@ -84,9 +84,9 @@ namespace LoginApp.Areas.Identity.Pages.Account.Manage
 
         public async Task<IActionResult> OnPostChangeEmailAsync()
         {
-            // Code For stopping Page execution. Should be removed if you want to execute page
-            var condition = true;
-            if (condition) return Page();
+            // 2 Code For stopping Page execution. Should be removed if you want to execute page
+            // var condition = true;
+            // if (condition) return Page();
 
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
@@ -125,9 +125,9 @@ namespace LoginApp.Areas.Identity.Pages.Account.Manage
 
         public async Task<IActionResult> OnPostSendVerificationEmailAsync()
         {
-            // Code For stopping Page execution. Should be removed if you want to execute page
-            var condition = true;
-            if (condition) return Page();
+            // 2 Code For stopping Page execution. Should be removed if you want to execute page
+            // var condition = true;
+            // if (condition) return Page();
 
             var user = await _userManager.GetUserAsync(User);
             if (user == null)

@@ -17,8 +17,8 @@ namespace LoginApp.EmailSenders
 
         public async Task SendEmailAsync(string email, string subjects, string htmlMessage)
         {
-            var email1 = "snscareers@yahoo.com";
-            var email3 = "NSNCareers@outlook.com";
+            // var email1 = "snscareers@yahoo.com";
+            // var email3 = "NSNCareers@outlook.com";
             var fromAddress = new MailAddress(_emailConfig.From);
             var toAddress = new MailAddress(email);
             string fromPassword = _emailConfig.Password;

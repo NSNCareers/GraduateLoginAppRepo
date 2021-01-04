@@ -44,8 +44,8 @@ namespace LoginApp.Areas.Identity.Pages.Account
         public IActionResult OnGet(string code = null)
         {
             // 2 Code For stopping Page execution. Should be removed if you want to execute page
-            // var condition = true;
-            // if (condition) return Page();
+            var condition = true;
+            if (condition) return Page();
 
             if (code == null)
             {
@@ -67,8 +67,8 @@ namespace LoginApp.Areas.Identity.Pages.Account
         public async Task<IActionResult> OnPostAsync()
         {
             // 2 Code For stopping Page execution. Should be removed if you want to execute page
-            // var condition = true;
-            // if (condition) return Page();
+            var condition = true;
+            if (condition) return Page();
 
             if (!ModelState.IsValid)
             {

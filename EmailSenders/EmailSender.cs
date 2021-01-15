@@ -19,6 +19,7 @@ namespace LoginApp.EmailSenders
         {
             // var email1 = "snscareers@yahoo.com";
             // var email3 = "NSNCareers@outlook.com";
+            // nsncareerstest@gmail.com
             var fromAddress = new MailAddress(_emailConfig.From);
             var toAddress = new MailAddress(email);
             string fromPassword = _emailConfig.Password;

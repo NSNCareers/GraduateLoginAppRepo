@@ -34,8 +34,9 @@ namespace LoginApp.EmailSenders
                     Port = _emailConfig.Port,
                     EnableSsl = _emailConfig.EnableSsl,
                     DeliveryMethod = SmtpDeliveryMethod.Network,
-                    Credentials = new NetworkCredential(fromAddress.Address, fromPassword),
+                    Credentials = new NetworkCredential(fromAddress.Address.Trim(), fromPassword.Trim()),
                     Timeout = _emailConfig.Timeout
+                    
                 };
 
                 using (var message = new MailMessage(fromAddress, toAddress)

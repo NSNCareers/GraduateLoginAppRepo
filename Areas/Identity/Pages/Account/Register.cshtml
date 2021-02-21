@@ -2,14 +2,19 @@
 @model RegisterModel
 @{
     // Defect to be corrected 8 (Register)
-    ViewData["Title"] = "Register";
+    ViewData["Title"] = "register";
 }
 
 <h1>@ViewData["Title"]</h1>
 
+
+
 <div class="row">
+
     <div class="col-md-4">
+
         <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
+
             <h4>Please Create a new account.</h4>
             <hr />
             <div asp-validation-summary="All" class="text-danger"></div>
@@ -32,12 +37,13 @@
         </form>
     </div>
     <div class="col-md-6 col-md-offset-2">
+        
         <section>
             <hr />
             @{
                 if ((Model.ExternalLogins?.Count ?? 0) == 0)
                 {
-                   
+
                 }
                 else
                 {

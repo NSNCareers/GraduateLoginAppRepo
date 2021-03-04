@@ -29,9 +29,7 @@ namespace LoginApp.Areas.Identity.Pages.Account
 
         public async Task<IActionResult> OnGetAsync(string email)
         {
-            // 2 Code For stopping Page execution. Should be removed if you want to execute page
-            // var condition = true;
-            // if (condition) return Page();
+
 
             if (email == null)
             {
